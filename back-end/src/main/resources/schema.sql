@@ -143,12 +143,32 @@ CREATE TABLE TwoFactorVerifications
     CONSTRAINT UQ_TwoFactorVerifications_User_Id UNIQUE (user_id),
     CONSTRAINT UQ_TwoFactorVerifications_Code UNIQUE (code )
 );
+DROP TABLE IF EXISTS 'customer';
 
+CREATE TABLE 'customer'
+(
+    `id` BIGINT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(255) NOT NULL,
+    `email` VARCHAR(255) NOT NULL,
+    `created_at` DATETIME NULL,
+    `updated_at` DATETIME NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE INDEX `UK_email` (`email` ASC) VISIBLE)
+    ENGINE = InnoDB;
 
+DROP TABLE IF EXISTS 'table_tennis_registration' ;
 
-
-
-
-
-
-
+CREATE TABLE 'table_tennis_registration'
+(
+    `id` BIGINT NOT NULL AUTO_INCREMENT,
+    `customer_id` BIGINT NOT NULL,
+    `registration_time` DATETIME NULL,
+    `table_tennis_type` VARCHAR(255) NULL,
+    PRIMARY KEY (`id`),
+    INDEX `FK_customer_id` (`customer_id` ASC) VISIBLE,
+    CONSTRAINT `FK_customer_id`
+        FOREIGN KEY (`customer_id`)
+            REFERENCES 'customer' (`id`)
+            ON DELETE NO ACTION
+            ON UPDATE NO ACTION)
+    ENGINE = InnoDB;
