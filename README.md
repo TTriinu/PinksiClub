@@ -16,9 +16,7 @@ And if we have time and ability we would like to make an app for it, but it's wh
 
   •	Account verification (verify email address);
   •	User profile image;
-
   •	User details (name, email, position, bio, phone, address, etc.);
-
   •	Being able to update user detail information.
 
     2.User reset password (without being logged in)
@@ -28,7 +26,6 @@ And if we have time and ability we would like to make an app for it, but it's wh
     3.User login (using email and a password)
     
   •	Token based authentication (JWT Token);
-
   •	Refresh Token seamlessly.
 
     4.Brute force attack mitigation (account lock mechanism)
@@ -56,6 +53,7 @@ And if we have time and ability we would like to make an app for it, but it's wh
                   Customers 
     
     1.Customer information
+    
   •	Customer
   •	Register 
   •	12 TennisTable
@@ -63,6 +61,7 @@ And if we have time and ability we would like to make an app for it, but it's wh
   •	Competition 
 
     2. Community
+    
   •	Message & picture
 
   
