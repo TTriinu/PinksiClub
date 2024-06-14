@@ -10,10 +10,10 @@ And if we have time and ability we would like to make an app for it, but it's wh
 
 Application User
 1.User new account (unique email address)
-	Account verification (verify email address)
-	User profile image
-	User details (name, email, position, bio, phone, address, etc. )
-	Being able to update user detail information
+	1. Account verification (verify email address)
+	2. User profile image
+	3. User details (name, email, position, bio, phone, address, etc. )
+	4. Being able to update user detail information
 
 2.User reset password (without being logged in)
 	Password reset password link should expire within 24 hours.
