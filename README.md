@@ -11,18 +11,9 @@ And if we have time and ability we would like to make an app for it, but it's wh
 			Application Requirements
    
 Application User
-1.User new account (unique email address);
-•	Account verification (verify email address);
-•	User profile image;
-•	User details (name, email, position, bio, phone, address, etc.);
-•	Being able to update user detail information;
-
-2.User reset password (without being logged in)
-•	Password reset password link should expire within 24 hours;
-
-3.User login (using email and a password)
-•	Token based authentication (JWT Token)
-•	Refresh Token seamlessly
+1.User new account - Account verification, user profile image, user details, being able to update user detail information, 
+2.User reset password - Password reset password link should expire within 24 hours.
+3.User login - Token based authentication (JWT Token), refresh Token seamlessly.
 
 4.Brute force attack mitigation (account lock mechanism);
 •	Lock account on 6-time failed login attempts;
